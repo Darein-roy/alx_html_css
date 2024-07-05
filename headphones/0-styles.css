@@ -1,0 +1,279 @@
+/* === GOOGLE FONT IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* === VARIABLES === */
+:root {
+    --white: #ffffff;
+    --light-red: #ff6565;
+    --black-pearl: #071629;
+    --black: #000000;
+    --gray: #979797;
+}
+
+/* === CSS PRESETS === */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* === GENERAL STYLES === */
+body,
+html {
+    margin: 0;
+    font-family: "source sans", sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    border:var(--gray);
+    background-color: var(--light-red);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+
+}
+
+.container {
+    background-image:url(Images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto;
+    height:fit-content;
+
+}
+
+/* === HEADER STYLES === */
+.nav {
+    display:flex;
+    justify-content:space-around;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.nav__logo {
+    width: 9rem;
+}
+
+.nav__list {
+    display: flex;
+    gap:3rem;
+}
+
+.nav__list__link {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* === INTRODUCTION STYLES === */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    margin-top: 16rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.intro p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.button {
+    margin-top: 5rem;
+}
+
+.intro__content {
+    margin-top: 6.25rem;
+    align-content: center;
+}
+
+.intro__content p {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left:6.25rem;
+    padding-right: 6.25rem;
+    margin-bottom: 7rem;
+}
+
+/* === WHAT WE DO... SECTION STYLES === */
+.what__we__do {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black-pearl);
+
+}
+
+.heading h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.heading p {
+    padding: 20px 380px 100px 380px;
+}
+
+.offer__content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 200px 100px 200px;
+    align-items:baseline;
+}
+
+.offer {
+    width:207px;
+    height:180px;
+    align-content: center;
+}
+
+.offer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0 20px;
+}
+
+.offer p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* === RESULTS SECTION STYLES === */
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: fit-content;
+    padding-top: 80px;
+}
+
+.results__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+}
+
+.results__text h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.results__text p {
+    font-size: 12px;
+    margin: 30px 380px 100px 380px;
+}
+
+.results__figures {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+
+}
+
+.result img {
+    width: 150px;
+    height: 150px;
+}
+
+/* === CONTACT US STYLES === */
+.contact__us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+.contact__us h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+} 
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 2px solid var(--black-pearl);
+    padding: 10px;
+    margin-bottom:60px;
+
+}
+
+/* === FOOTER STYLES === */
+.footer {
+    background-color:var(--black-pearl);
+    padding: 30px 0;
+}
+
+.footer__info {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.social__links {
+    color: var(--gray);
+    margin: 20px;
+}
+
+.social__links i {
+    cursor: pointer;
+    color: var(--white);
+}
+
+.footer__logo {
+    width: 9rem;
+}
+
+.footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+    opacity: 0.5;
+    font-size: 12px;
+}
