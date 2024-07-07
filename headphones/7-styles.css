@@ -228,6 +228,10 @@ ul {
     padding-top: 80px;
 }
 
+.result:hover {
+    color:var(--gray);
+}
+
 .results__text {
     display: flex;
     flex-direction: column;
@@ -273,15 +277,15 @@ ul {
     font-size: 9px;
 }
 
-
-.pentagon {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin: 0 auto 20px auto;
+.result img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
 }
 
-
+.result img:hover {
+    color: var(--gray);
+}
 
 /* Media queries for responsive design */
 @media (max-width: 480px) {
